@@ -63,6 +63,7 @@ public class Main {
 	static List<Product> createProductList() {
 		List<Product> productList = new ArrayList<>();
 
+		productList.add(new Product(1L, "Il Signore Di Java - Stream Sniper", "Books", 150.0));
 		productList.add(new Product(1L, "Il Signore Di Java - Stream Sniper", "Boys", 150.0));
 		productList.add(new Product(2L, "Bleach", "Baby", 90.0));
 		productList.add(new Product(3L, "Il Signore di Java - E Le Due Eccezioni", "Boys", 50.0));
@@ -74,7 +75,7 @@ public class Main {
 		List<Order> orderList = new ArrayList<>();
 
 		List<Product> order1Products = new ArrayList<>();
-		order1Products.add(new Product(1L, "Il Signore Di Java - Stream Sniper", "Boys", 150.0));
+		order1Products.add(new Product(1L, "Il Signore Di Java - Stream Sniper", "Books", 150.0));
 		order1Products.add(new Product(3L, "Il Signore di Java - E Le Due Eccezioni", "Boys", 50.0));
 		Order order1 = new Order(1L, "Pending", LocalDate.of(2021, 3, 15), LocalDate.of(2021, 3, 25), order1Products,
 				new Customer(1L, "Luca", 2));
